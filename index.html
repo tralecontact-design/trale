@@ -377,7 +377,7 @@ const CONFIG = {
 
   /* ---- CONTACTO (reemplaza con tus datos reales) ---- */
   contact: {
-    whatsapp:  "529671345701",               // código país + número, sin + ni espacios
+    whatsapp:  "525646463435",               // código país + número, sin + ni espacios
     instagram: "https://instagram.com/traleofficial",
     email:     "trale.contact@gmail.com",
     text:      "Pedidos, tallas, envíos o colaboraciones. Respondemos directo, sin vueltas."
@@ -536,7 +536,7 @@ $('#look').innerHTML = CONFIG.lookbook.filter(Boolean).slice(0,2).map((s,i)=>
 $('#specs').innerHTML = CONFIG.specs.map(([a,b])=>`<li><span>${a}</span><span>${b}</span></li>`).join('');
 $('#promises').innerHTML = CONFIG.promises.map(([a,b],i)=>`<div class="reveal d${i+1}"><b>${a}</b><p>${b}</p></div>`).join('');
 $('#channels').innerHTML = `
-  <a class="btn" target="_blank" rel="noopener" href="https://wa.me/${CONFIG.contact.whatsapp}?text=${encodeURIComponent('Hola trale, quiero información.')}">WhatsApp →</a>
+  <a class="btn" target="_blank" rel="noopener" href="https://wa.me/${CONFIG.contact.whatsapp}?text=${encodeURIComponent('hola!, me gudtaría más información.')}">WhatsApp →</a>
   <a class="btn ghost" target="_blank" rel="noopener" href="${CONFIG.contact.instagram}">Instagram</a>
   <a class="btn ghost" href="mailto:${CONFIG.contact.email}">Correo</a>`;
 
@@ -581,7 +581,7 @@ function openProduct(id){
   });
   $('#buy').addEventListener('click', e=>{
     if(!size){ e.preventDefault(); $('#err').textContent = 'Elige tu talla para continuar.'; return; }
-    const msg = `Hola trale 👋 Quiero pedir:\n• ${p.name} (${p.color})\n• Talla: ${size}\n• Precio: ${p.price}\n¿Está disponible?`;
+    const msg = `hola! 👋 Quiero pedir:\n• ${p.name} (${p.color})\n• Talla: ${size}\n• Precio: ${p.price}\n¿Está disponible?`;
     $('#buy').href = `https://wa.me/${CONFIG.contact.whatsapp}?text=${encodeURIComponent(msg)}`;
   });
 
