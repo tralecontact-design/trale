@@ -536,7 +536,7 @@ $('#look').innerHTML = CONFIG.lookbook.filter(Boolean).slice(0,2).map((s,i)=>
 $('#specs').innerHTML = CONFIG.specs.map(([a,b])=>`<li><span>${a}</span><span>${b}</span></li>`).join('');
 $('#promises').innerHTML = CONFIG.promises.map(([a,b],i)=>`<div class="reveal d${i+1}"><b>${a}</b><p>${b}</p></div>`).join('');
 $('#channels').innerHTML = `
-  <a class="btn" target="_blank" rel="noopener" href="https://wa.me/${CONFIG.contact.whatsapp}?text=${encodeURIComponent('hola!, me gudtaría más información.')}">WhatsApp →</a>
+  <a class="btn" target="_blank" rel="noopener" href="https://wa.me/${CONFIG.contact.whatsapp}?text=${encodeURIComponent('hola!, me gustaría más información.')}">WhatsApp →</a>
   <a class="btn ghost" target="_blank" rel="noopener" href="${CONFIG.contact.instagram}">Instagram</a>
   <a class="btn ghost" href="mailto:${CONFIG.contact.email}">Correo</a>`;
 
